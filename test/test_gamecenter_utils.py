@@ -1,6 +1,7 @@
 import unittest
 from data_extraction import gamecenter_utils as gcu
 
+
 class TestGamecenterUtils(unittest.TestCase):
 
     def setUp(self):

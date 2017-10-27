@@ -9,7 +9,8 @@ Where YYYY is the year, SSN is the season (PRE, REG, POST), and WK is the week
     http://www.nfl.com/scores/2016/REG17
 """
 
-import json, urllib.request
+import json
+import urllib.request
 from bs4 import BeautifulSoup as soup
 
 
