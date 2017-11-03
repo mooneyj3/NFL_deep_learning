@@ -11,10 +11,23 @@ Code up this method next
 
 
 def process_single_game(game_id, data_dict):
+    """Process single game
+    TODO:  define output requirements
+    Code up this method next
+    :param game_id:
+    :param data_dict:
+    :return:
+    """
     print("Processing: " + str(game_id))
 
 
-''' Main function'''
+def prompt_year(lower_limit, upper_limit, prompt):
+    year = 0
+    while not lower_limit <= year <= upper_limit:
+        print("\t" + prompt + ": ")
+        year = int(input('\tStart Year: '))
+    return year
+
 if __name__ == '__main__':
     # get output directory
     # /Users/J-Moneyham/NFL_exp
@@ -28,6 +41,7 @@ if __name__ == '__main__':
     start_year = end_year = 0
     min_year = 2009
     max_year = datetime.datetime.now().year + 1
+
     while not min_year <= start_year <= max_year:
         print("Input start year greater than " + str(min_year - 1) + ".")
         start_year = int(input('\tStart Year: '))
